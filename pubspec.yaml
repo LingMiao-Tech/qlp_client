@@ -37,6 +37,10 @@ dependencies:
   logto_dart_sdk: ^3.0.0
   flutter_bloc: ^9.1.1
 
+dependency_overrides:
+  # For Flutter Web WASM
+  flutter_secure_storage: ^10.0.0-beta.4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
