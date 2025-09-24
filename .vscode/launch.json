@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "qlp_client (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "qlp_client (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "qlp_client (Flutter Chrome)",
+            "program": "lib/main.dart",
+            "deviceId": "chrome",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "qlp_client (Flutter macOS)",
+            "program": "lib/main.dart",
+            "deviceId": "macos",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
