@@ -38,12 +38,15 @@ final _globalAppNameReleaseConfig = GlobalAppNameConfigLocalRepository(
 //
 // Tip: Change 'AppName' to your application name (use 'Test' or 'Debug' if needed)
 //
+/*
 final _globalQlpDevConfig = GlobalAppNameConfigLocalRepository(
   configName: 'QlpDev',
   configType: 'Development',
   logtoEndpoint: '<your-logto-endpoint>',
   logtoAppId: '<your-app-id>',
 );
+*/
+import './config_qlp.dart';
 
 //
 // Config Loader
@@ -70,7 +73,7 @@ class ConfigLoader {
     switch (configType) {
       case 'Development':
         // _globalAppNameConfig = _globalAppNameDevConfig;
-        _globalQlpConfig = _globalQlpDevConfig;
+        _globalQlpConfig = globalQlpDevConfig;
       case 'Debug':
       // _globalAppNameConfig = _globalAppNameDebugConfig;
       case 'Test':
@@ -79,7 +82,7 @@ class ConfigLoader {
       // _globalAppNameConfig = _globalAppNameReleaseConfig;
       default:
         // _globalAppNameConfig = _globalAppNameDevConfig;
-        _globalQlpConfig = _globalQlpDevConfig;
+        _globalQlpConfig = globalQlpDevConfig;
     }
     // Load extra config
     // _globalAppNameExtraConfig = <your-extra-config>;

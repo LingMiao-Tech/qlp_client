@@ -1,3 +1,6 @@
+# QingLingPavilion Client
+lib/config/config_qlp.dart
+
 # Miscellaneous
 *.class
 *.lock
