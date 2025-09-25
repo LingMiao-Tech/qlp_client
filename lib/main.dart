@@ -1,9 +1,9 @@
 // File: main.dart
 import 'package:flutter/material.dart';
-
 import 'package:go_router/go_router.dart';
-import './page/user/my_home.dart';
-import './page/user/login.dart';
+
+import 'page/user/my_home_view.dart';
+import 'page/user/login_view.dart';
 
 // GoRouter configuration
 final _router = GoRouter(
@@ -22,6 +22,7 @@ final _router = GoRouter(
   ],
   redirect: (BuildContext context, GoRouterState state) {
     // return '/user/login';
+    return null;
   },
 );
 
